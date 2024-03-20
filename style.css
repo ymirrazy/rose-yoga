@@ -1,0 +1,610 @@
+:root{
+    --pink:#d15ca4;
+    --bg:#0a0a0a;
+    --shadow:0 2px 2px rgb(0 0 0/0.5);
+}
+body {
+    font-size: 1.2rem;
+    font-family: 'work Sans', sans-serif;
+}
+
+
+
+
+/* home */
+
+.home{
+background-image: url(img/judul.png);
+background-size: cover;
+min-height: 100vh;
+margin-top: -4rem;
+padding-top: 10rem;
+
+}
+
+.home h2, .info h2, .story h2,.rsvp h2,.gallery h2{
+    color: var(--pink);
+    font-family: 'sacramento';
+    font-size: 4rem;
+    font-weight: bold;
+}
+ .home h3{
+    color: #444;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+ }
+ .home p, .gallery p,.info p .story p, .rsvp p{
+    font: size 1.2rem;
+    color: #666;
+ }
+
+.home .couple {
+margin-top: 10px;
+}
+
+.home .couple h3{
+    font-family: 'pacifico';
+    font-size: 2rem;
+    color: var(--pink);
+}
+.home .couple a{
+    font-family: 'pacifico';
+    font-size: 1rem;
+    color: #666;
+    text-decoration:none;
+    display: inline-flex;
+}
+
+.home .ry{
+width: 100px;
+height: 100px;
+display: flex;
+position: absolute;
+left: 50%;
+transform: translateX(-50%) translateY(100%);
+}
+
+.home .ry img{
+    margin: auto;
+}
+.home .couple img{
+    justify-content: center;
+    width: 100%; 
+}
+.home .couple .cewe{
+    box-shadow: var(--shadow);
+    border-radius: 50%;
+    width: 78%;
+    display: flex;
+    position: relative;
+    transform: translateY(-112%) translateX(10%);    
+}
+
+.home .couple .frame{
+    display: flex;
+    position: relative;
+    z-index: 1;
+   }
+
+.home .couple .cowo{
+    box-shadow: var(--shadow);
+    border-radius: 50%;
+    width: 78%;
+    display: flex;
+    position: relative;
+    transform: translateY(-112%) translateX(10%);    
+}
+
+.home .couple #cewe{
+    display: inline-flex;
+    margin-right: 2px;
+    margin-top: 4px;
+    
+}
+.home .couple #cowo{
+    display: inline-flex;
+    margin-left: 2px;
+    margin-top: 4px;
+    
+}
+
+
+
+
+
+/* hero */
+
+.hero::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/bg2.JPG);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    filter:blur(1px)grayscale();
+}
+
+.hero h1,.hero h4,.hero p{
+    text-shadow: var(--shadow);
+}
+.hero h4 {
+    left: 50%;
+    top: 75px;
+    transform: translateX(-50%);
+    position: absolute;
+    display:flex;
+    font-size: 2rem;
+    font-family:'genos';
+    font-weight: 300;
+}
+
+.hero{
+    position: relative;
+    min-height: 100vh;
+}
+.hero h1{
+    font-family:'sacramento';
+    color: var(--pink);
+    font-size: 5rem;
+    font-weight: bold;
+
+}
+
+.hero p{
+    font-size: 2rem;
+    font-family: 'genos';
+}
+
+.hero h3{
+    font-size: 2rem;
+    font-family: 'macondo';
+}
+
+.hero .simply-countdown{
+    margin-bottom: 3rem;
+}
+
+.hero a{
+    color: var(--pink);
+    background-color: white;
+    margin-bottom: 12rem;
+}
+.hero a:hover {
+    background-color: var(--pink);
+    color: white;
+}
+
+
+
+
+/* navbar */
+
+.mynavbar{
+    background-color:rgba(255, 255, 255, 0.4) !important;
+    backdrop-filter:blur(4px) ;
+
+}
+.mynavbar .offcanvas {
+    height: 100vh;
+   
+}
+.mynavbar .navbar-brand, .mynavbar .offcanvas-title{
+    font-family: 'sacramento',cursive;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+.mynavbar .nav-link{
+    text-transform: uppercase;
+}
+.batas{
+    display: flex;
+    content: '';
+    background-size: cover;
+    background-image: url(img/bg4.png);
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    transform: translateY(-60%);
+}
+
+
+
+/* info */
+
+.info {
+    background-image: url(img/judul.png);
+    background-size: cover;
+    min-height: 100vh;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}    
+.info .alamat{
+    padding-top: rem ;
+    font-size: 1.1rem;
+
+}
+.info .card{
+    background-color: transparent !important;
+    color:transparent ;
+
+}
+.info .card-header{
+    font-family: 'macondo';
+    font-weight: bold;
+}
+
+.info .btn{
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    background-color: var(--pink);
+    color: #fff;
+    padding: 5px 6px;
+    margin-top: 100px;
+}
+
+.info .map{
+    margin-top: 20px;
+}
+
+
+
+/* story */
+
+.story{
+        background-image: url(img/judul.png);
+        background-size: cover;
+        min-height: 100vh;
+        padding-top: 6rem; 
+        justify-content: center;
+        padding-bottom: 6rem;
+
+}
+
+.story span{
+    text-transform: uppercase;
+    color: #666;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 1rem;
+
+}
+
+
+
+
+
+.story .couple img , .couple1 img{
+    justify-content: center;
+    width: 100%; 
+}
+.story .couple .cewe , .couple1 .cewe{
+    box-shadow: var(--shadow);
+    border-radius: 50%;
+    width: 78%;
+    display: flex;
+    position: relative;
+    transform: translateY(-112%) translateX(10%);    
+}
+
+.story .couple .frame,.couple1 .frame{
+    display: flex;
+    position: relative;
+    z-index: 1;
+   }
+
+.story .couple .cowo, .couple1 .cowo {
+    box-shadow: var(--shadow);
+    border-radius: 50%;
+    width: 78%;
+    display: flex;
+    position: relative;
+    transform: translateY(-112%) translateX(10%);    
+}
+
+.story .couple #cewe,.couple1 #cewe{
+    display: inline-flex;
+    margin-right: 2px;
+    margin-top: 4px;
+    
+}
+.story .couple #cowo, .couple1 #cowo{
+    display: inline-flex;
+    margin-left: 2px;
+    margin-top: 4px;
+    
+}
+
+.story .couple, .couple1{
+    margin-top: 10px;
+    }
+   
+    .story .couple h3, .couple1 h3{
+        font-family: 'pacifico';
+        font-size: 2rem;
+        color: var(--pink);
+    }
+    .story .couple p, .couple1 p{
+        font-size: 1rem;
+        color: #666;
+        text-decoration:none;
+        display: inline-flex;
+    }
+
+
+/* rsvp */
+.rsvp{
+    background-image: url(img/judul.png);
+    background-size: cover;
+    min-height: 100vh;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    
+}
+.rsvp form{
+    margin-top: -3rem;
+    margin-bottom: -9rem;
+}
+
+.rsvp h2{
+    font-size: 3.5rem;
+    
+}
+.rsvp p{
+    font-size: 1.2rem;
+}
+.rsvp h1{
+    font-family: 'macondo';
+    font-size: 2rem;
+    padding-top: 3rem;
+}
+
+.rsvp button{
+    background-color: var(--pink);
+    color: white;
+    border: 1px solid var(--pink);
+}
+.rsvp button:hover{
+    color: var(--pink);
+    border: 1px solid var(--pink);
+}
+.story .arrum{
+    margin-top: -8rem;
+    padding: 0 3rem;
+    margin-bottom: -3rem;
+
+}
+
+
+.gallery{
+    justify-content: center;
+    background-image: url(img/judul.png);
+    background-size: cover;
+    min-height: 100vh;
+    margin-top: 6rem;
+    padding-top: 2rem;
+    
+}
+.gallery .carousel-inner{
+border-radius: 10%;
+}
+
+.gallery .carousel{
+    justify-content: center;
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 8rem;
+}
+.gallery .carousel-item h4{
+    color:var(--pink);
+
+ 
+}
+.carousel-indicators{
+    position:absolute;
+    transform: translateY(100%);
+    }
+.carousel-indicators img{
+    border-radius: 20%;
+    width: 40px;
+    display: block;
+}
+
+    .carousel-indicators button img{
+        transition-duration: 1s;
+
+    }
+
+
+.carousel-indicators button.active img{
+    border: 2px white solid ;
+    width:max-content;
+    transform: scale(2);
+    transition-duration: 1s;
+    opacity: 1;
+ 
+}
+
+
+
+
+footer {
+    padding: 1.5rem;
+    background-color: var(--pink);
+    color: white;
+  }
+  
+  footer a {
+    color: var(--bg);
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    color: white;
+  }
+  
+  footer li {
+    list-style: none;
+    display: inline;
+    margin: 1rem;
+  }
+  
+  .audio-icon-wrapper {
+    width: 4rem;
+    height: 4rem;
+    font-size: 4rem;
+    position: fixed;
+    bottom: 2.5rem;
+    right: 2rem;
+    cursor: pointer;
+    color: rgb(12, 12, 12);
+    opacity: 0.5;
+    mix-blend-mode:darken;
+    animation: rotating 4s linear infinite;
+    transform-origin: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+    z-index: 3;
+  }
+  
+  @keyframes rotating {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+
+
+  #disqus_thread{
+    width: 80%;
+    text-align: center;
+   margin: auto;
+   padding: auto;
+  }
+
+
+/* media query */
+
+    
+
+/* laptop */
+@media (max-width: 992px) {
+    html {
+        font-size: 75%;
+    }   
+    .simply-countdown  .simply-section {
+        padding: 75%;
+        
+    }
+    .home .ry {
+        transform: translateY(100%);
+    }
+   
+}
+
+/* tablet */
+@media (max-width: 768px) {
+    html {
+        font-size: 65%;
+    }   
+    
+    .simply-countdown  .simply-section {
+        padding: 65%;
+        margin: 10px;
+        
+    }
+    .mynavbar .nav-link{
+        text-transform: uppercase;
+        font-size: 2rem;
+    }
+    .home .ry{
+        width: 75px;
+        transform: translateX(-45%) translateY(75%);
+    }
+    .sticky-top{
+        overflow: hidden;
+    }
+  
+}
+
+
+/* moblie phone */
+@media (max-width: 576px) {
+    html {
+        font-size: 60%;
+    }   
+    .simply-countdown  .simply-section {
+      padding: 50%;
+      margin: 5px;
+    }
+    .home .ry {
+        width: 60px;
+        transform: translateX(-40%) translateY(130%) ;
+    }
+.sticky-top{
+    overflow: hidden;
+}
+    .oga1{
+        margin-top: 5rem;
+    }
+    .oga{
+        margin-top: -10rem;
+    
+    }
+   .home .couple{
+        margin-top: 5rem;
+    }
+   .story .couple{
+        margin-top: 5rem;
+    }
+    .story .couple1{
+        margin-top: -10rem;
+    }
+    .rsvp button{
+        margin-top: -70px;
+    }
+    .rsvp .row{
+        margin-bottom:5rem;
+
+    }
+    .rsvp form{
+        background-color: #0a0a0a18;
+        backdrop-filter: blur(4px);
+        border-radius: 10%;
+        width: 80%;
+        margin: auto;
+    }
+    .navbar .offcanvas{
+        background-color: #ffffff25 ;
+        color:white;
+        transition: none;
+        width: 50%;
+        height: 50vh;
+        transform: translateX(-50%);
+        border-radius: 10px;
+    }
+    .navbar .nav-link{
+        font-family: 'macondo';
+        background-color: var(--pink);
+        border: 2px solid #ffffff25;
+        color: white;
+        padding-left: 20px;
+        margin-bottom: 3px;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+}
+
+
+
